@@ -12,20 +12,20 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.a48hours.databinding.FragmentGalleryBinding;
 
-public class GalleryFragment extends Fragment {
+public class ClockFragment extends Fragment {
 
     private FragmentGalleryBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        GalleryViewModel galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
+        ClockViewModel clockViewModel =
+                new ViewModelProvider(this).get(ClockViewModel.class);
 
         binding = FragmentGalleryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textGallery;
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        clockViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
