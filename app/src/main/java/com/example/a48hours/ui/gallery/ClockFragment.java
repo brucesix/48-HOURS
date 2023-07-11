@@ -4,12 +4,16 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.a48hours.R;
 import com.example.a48hours.databinding.FragmentGalleryBinding;
 
 public class ClockFragment extends Fragment {
@@ -24,8 +28,18 @@ public class ClockFragment extends Fragment {
         binding = FragmentGalleryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGallery;
-        clockViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        // SET THE ADAPTER FOR SPINNER
+
+        Spinner spinnerClockInType = (Spinner) root.findViewById(R.id.spinner);
+
+
+        ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this.getActivity(),
+                R.array.Type, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        spinnerClockInType.setAdapter(adapter);
+
+//        final TextView textView = binding.textGallery;
+//        clockViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

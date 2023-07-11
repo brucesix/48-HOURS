@@ -11,4 +11,11 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="clock_in">Clock in</string>
+
+    <string-array name="Type">
+        <item>Clock In</item>
+        <item>Start Lunch</item>
+        <item>End Lunch</item>
+        <item>Clock Out</item>
+    </string-array>
 </resources>
