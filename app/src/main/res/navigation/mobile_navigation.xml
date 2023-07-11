@@ -14,7 +14,7 @@
     <fragment
         android:id="@+id/nav_clock"
         android:name="com.example.a48hours.ui.gallery.ClockFragment"
-        android:label="PUNCH IN"
+        android:label="PUNCH"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
