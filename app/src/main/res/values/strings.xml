@@ -11,6 +11,9 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="clock_in">Clock in</string>
+    <string name="submit">Submit</string>
+    <string name="last_punch">Last Punch:</string>
+    <string name="est">[EST]</string>
 
     <string-array name="Type">
         <item>Clock In</item>
