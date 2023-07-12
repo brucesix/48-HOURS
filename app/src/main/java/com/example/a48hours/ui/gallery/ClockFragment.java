@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -43,15 +42,15 @@ public class ClockFragment extends Fragment {
         spinnerClockInType.setAdapter(adapter);
 
         // Register the text view with the right ID
-        dateTimeFormat = (TextView) root.findViewById(R.id.dateFormat1);
-
-        // get the long type value of the current system date
-        Long dateValueInLong = System.currentTimeMillis();
-        dateTimeFormat.setText(dateValueInLong.toString());
+//        dateTimeFormat = (TextView) root.findViewById(R.id.dateFormat1);
+//
+//        // get the long type value of the current system date
+//        Long dateValueInLong = System.currentTimeMillis();
+//        dateTimeFormat.setText(dateValueInLong.toString());
 
         // Format the date
-        calendar = Calendar.getInstance();
-        simpleDateFormat = new SimpleDateFormat("EEEE, LLL dd");
+//        calendar = Calendar.getInstance();
+//        simpleDateFormat = new SimpleDateFormat("EEEE, LLL dd");
 //        dateTime = simpleDateFormat.format(calendar.toString());
 //        dateTimeFormat.setText(dateTime);
 
