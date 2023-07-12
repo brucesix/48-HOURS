@@ -34,12 +34,12 @@ public class ClockFragment extends Fragment {
         SimpleDateFormat simpleDateFormat;
 
         // SET THE ADAPTER FOR SPINNER
-
-        Spinner spinnerClockInType = (Spinner) root.findViewById(R.id.spinner);
-        ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this.getActivity(),
-                R.array.Type, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
-        spinnerClockInType.setAdapter(adapter);
+        //TODO THIS IS THE CODE FOR THE SPINNER
+//        Spinner spinnerClockInType = (Spinner) root.findViewById(R.id.spinner);
+//        ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this.getActivity(),
+//                R.array.Type, android.R.layout.simple_spinner_item);
+//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+//        spinnerClockInType.setAdapter(adapter);
 
         // Register the text view with the right ID
 //        dateTimeFormat = (TextView) root.findViewById(R.id.dateFormat1);
