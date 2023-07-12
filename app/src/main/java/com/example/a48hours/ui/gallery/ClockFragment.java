@@ -14,18 +14,18 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.a48hours.R;
-import com.example.a48hours.databinding.FragmentGalleryBinding;
+import com.example.a48hours.databinding.FragmentClockBinding;
 
 public class ClockFragment extends Fragment {
 
-    private FragmentGalleryBinding binding;
+    private FragmentClockBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         ClockViewModel clockViewModel =
                 new ViewModelProvider(this).get(ClockViewModel.class);
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentClockBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         // SET THE ADAPTER FOR SPINNER

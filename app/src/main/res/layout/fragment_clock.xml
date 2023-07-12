@@ -17,11 +17,12 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.698" />
+        app:layout_constraintVertical_bias="0.698"
+        android:backgroundTint="@color/blue"
+        />
 
     <Spinner
         android:id="@+id/spinner"
-        android:outlineAmbientShadowColor="@color/black"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginBottom="256dp"
