@@ -7,29 +7,39 @@
     tools:context=".ui.gallery.ClockFragment">
 
     <Button
+        android:id="@+id/Clock"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="528dp"
         android:background="@drawable/round"
-        android:id="@+id/submit"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:text="@string/submit"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.698"
         android:backgroundTint="@color/blue"
-        />
+        android:text="Clock"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/youClocked" />
+
+    <Button
+        android:id="@+id/clockIn"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="528dp"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/white"
+        android:text="Clock In"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="181dp" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/last_unch2"
@@ -44,34 +54,36 @@
         android:id="@+id/digitalClock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="68dp"
+        android:layout_marginTop="24dp"
         android:textColor="@color/black"
         android:textSize="35sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
 
     <TextView
-        android:id="@+id/est"
+        android:id="@+id/youClocked"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/est"
+        android:layout_marginTop="8dp"
+        android:text="You clocked in at 8:30am"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/digitalClock" />
-
-    <TextView
-        android:id="@+id/dateFormat1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/digitalClock"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.833" />
+        app:layout_constraintTop_toBottomOf="@+id/digitalClock"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Thursday July 12th"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
