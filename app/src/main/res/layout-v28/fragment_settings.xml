@@ -7,136 +7,16 @@
     tools:context=".ui.slideshow.SettingsFragment">
 
     <Button
-        android:id="@+id/button21"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="49dp"
-        android:layout_height="38dp"
-        android:background="android:color/transparent"
-        android:text="F"
-        android:textColor="#AEA6A6"
-        tools:layout_editor_absoluteX="279dp"
-        tools:layout_editor_absoluteY="357dp" />
-
-    <Button
-        android:id="@+id/button19"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="49dp"
-        android:layout_height="38dp"
-        android:background="android:color/transparent"
-        android:text="S"
-        android:textColor="#AEA6A6"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="357dp" />
-
-    <Button
-        android:id="@+id/button20"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="49dp"
-        android:layout_height="38dp"
-        android:background="android:color/transparent"
-        android:text="T"
-        android:textColor="#AEA6A6"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="357dp" />
-
-    <Button
-        android:id="@+id/button18"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="49dp"
-        android:layout_height="38dp"
-        android:background="android:color/transparent"
-        android:text="T"
-        android:textColor="#AEA6A6"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="357dp" />
-
-    <Button
-        android:id="@+id/button17"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="49dp"
-        android:layout_height="38dp"
-        android:background="android:color/transparent"
-        android:text="W"
-        android:textColor="#AEA6A6"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="357dp" />
-
-    <Button
-        android:id="@+id/button23"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="49dp"
-        android:layout_height="38dp"
-        android:background="android:color/transparent"
-        android:text="S"
-        android:textColor="#AEA6A6"
-        tools:layout_editor_absoluteX="328dp"
-        tools:layout_editor_absoluteY="357dp" />
-
-    <Button
-        android:id="@+id/button22"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="49dp"
-        android:layout_height="38dp"
-        android:background="android:color/transparent"
-        android:text="M"
-        android:textColor="#AEA6A6"
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="357dp" />
-
-    <Button
-        android:id="@+id/button16"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="49dp"
-        android:layout_height="38dp"
-        android:background="android:color/transparent"
-        android:text="S"
-        android:textColor="#AEA6A6"
-        tools:layout_editor_absoluteX="326dp"
-        tools:layout_editor_absoluteY="136dp" />
-
-    <Button
-        android:id="@+id/button14"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="49dp"
-        android:layout_height="38dp"
-        android:background="android:color/transparent"
-        android:text="T"
-        android:textColor="#AEA6A6"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="136dp" />
-
-    <Button
-        android:id="@+id/button15"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="49dp"
-        android:layout_height="38dp"
-        android:background="android:color/transparent"
-        android:text="F"
-        android:textColor="#AEA6A6"
-        tools:layout_editor_absoluteX="277dp"
-        tools:layout_editor_absoluteY="136dp" />
-
-    <Button
-        android:id="@+id/button12"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="49dp"
-        android:layout_height="38dp"
-        android:background="android:color/transparent"
-        android:text="M"
-        android:textColor="#AEA6A6"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="136dp" />
-
-    <Button
-        android:id="@+id/button13"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="49dp"
-        android:layout_height="38dp"
-        android:background="android:color/transparent"
-        android:text="S"
-        android:textColor="#AEA6A6"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="136dp" />
+        android:id="@+id/outlinedButton2"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set up reminder"
+        android:textAllCaps="false"
+        android:textColor="#008782"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="407dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text_slideshow"
@@ -173,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="284dp"
+        android:layout_marginTop="292dp"
         android:text="Location-based reminder"
         android:textColor="#000000"
         android:textSize="20dp"
@@ -208,7 +88,7 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="224dp"
+        android:layout_marginTop="236dp"
         android:layout_marginEnd="40dp"
         android:text="Reminder is off."
         app:layout_constraintEnd_toEndOf="@+id/textView2"
@@ -219,27 +99,14 @@
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         android:text="Set up reminder"
         android:textAllCaps="false"
         android:textColor="#008782"
         app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/outlinedButton2"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <Button
-        android:id="@+id/outlinedButton2"
-        style="?attr/materialButtonOutlinedStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="Set up reminder"
-        android:textAllCaps="false"
-        android:textColor="#008782"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <View
         android:id="@+id/view4"
@@ -277,6 +144,7 @@
         android:layout_marginTop="60dp"
         android:text="Meal break"
         app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="48dp" />
 
     <TextView
@@ -284,52 +152,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Break"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="48dp"
         tools:layout_editor_absoluteY="626dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button30min"
         android:layout_width="318dp"
         android:layout_height="52dp"
+        android:background="#FFECECEC"
         android:backgroundTint="#FFFFFF"
-        android:background="android:color/transparent"
-        android:text="   30 min"
         android:gravity="left|center_vertical"
+        android:text="   30 min"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="48dp"
         tools:layout_editor_absoluteY="556dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button15min"
         android:layout_width="318dp"
         android:layout_height="52dp"
-        android:background="android:color/transparent"
+        android:background="#FFECECEC"
         android:backgroundTint="#FFFFFF"
         android:gravity="left|center_vertical"
         android:text="   15 min"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="48dp"
         tools:layout_editor_absoluteY="645dp" />
-
-    <Button
-        android:id="@+id/button8"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="49dp"
-        android:layout_height="38dp"
-        android:background="android:color/transparent"
-        android:text="W"
-        android:textColor="#AEA6A6"
-        tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="136dp" />
-
-    <Button
-        android:id="@+id/button11"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="49dp"
-        android:layout_height="38dp"
-        android:background="android:color/transparent"
-        android:text="T"
-        android:textColor="#AEA6A6"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="136dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
